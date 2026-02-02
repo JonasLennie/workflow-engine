@@ -1,0 +1,9 @@
+{
+  "workflow_type": "manufacturing_analysis",
+  "tasks": [
+    {"task_type": "detect_outliers", "depends_on": []},
+    {"task_type": "analyze_trends", "depends_on": []},
+    {"task_type": "synthesize", "depends_on": ["detect_outliers", "analyze_trends"]},
+    {"task_type": "verdict", "depends_on": ["synthesize"]}
+  ]
+}
